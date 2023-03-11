@@ -136,7 +136,18 @@ public class currencyConvert extends javax.swing.JFrame {
         messageBox(String.valueOf("YEN" + result), "currencyConvert");
     }
 }
-
+/*The provided code includes six classes that represent currency conversion 
+operations between different currency types. The classes are as follows:
+USDYenConversion: This class performs a currency conversion from US Dollars (USD) to Japanese Yen (YEN).
+YenUSDConversion: This class performs a currency conversion from Japanese Yen (YEN) to US Dollars (USD).
+YenEuroConversion: This class performs a currency conversion from Japanese Yen (YEN) to Euros (EURO).
+EuroYenConversion: This class performs a currency conversion from Euros (EURO) to Japanese Yen (YEN).
+USDEuroConversion: This class performs a currency conversion from US Dollars (USD) to Euros (EURO).
+EuroUSDConversion: This class performs a currency conversion from Euros (EURO) to US Dollars (USD).
+*/
+/*Each of these classes contains a method called convert that takes a Double value as input and returns the converted value.
+The conversion formula is hard-coded into each class's convert method.
+*/
 public class YenUSDConversion {
     public void convert(Double value) {
         Double result = value * .0074;
@@ -171,7 +182,8 @@ public class EuroUSDConversion {
         messageBox(String.valueOf("USD" + result), "currencyConvert");
     }
 }
-
+/*The jButton1ActionPerformed method calls the appropriate convert method based on the selected currencies and the amount entered by the user. 
+It then displays the converted amount in a message box using the messageBox method.*/
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String currency1 = (String)Currency1.getSelectedItem();
     String currency2 = (String)Currency2.getSelectedItem();
